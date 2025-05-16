@@ -1,83 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>امیرعلی اکبرزاده | Hapkido</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <title>امیرعلی اکبرزاده | هاپکیدو</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/32c36e7a3e.js" crossorigin="anonymous"></script>
   <style>
-    body {
-      background-image: url('hero-background-final.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    }
-    .glass-icon {
-      background: rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(8px);
-      border-radius: 50%;
-      padding: 12px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 10px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    .glass-icon:hover {
-      transform: scale(1.2);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
-    }
-    .glass-icon i {
-      font-size: 20px;
-      color: #fff;
-    }
+    body { font-family: 'Vazir', sans-serif; background-color: #0f172a; color: white; }
   </style>
 </head>
-<body class="text-white">
+<body>
 
-  <header class="text-center py-16 bg-black bg-opacity-60">
-    <h1 class="text-4xl font-bold mb-4">امیرعلی اکبرزاده</h1>
-    <p class="text-xl">ورزشکار رشته هاپکیدو | Hapkido I.T.H</p>
-    <div class="flex justify-center mt-4 space-x-4">
-      <a href="https://instagram.com/brave_amirali7" target="_blank" class="glass-icon">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-5 bg-gray-900 shadow-lg">
+    <h1 class="text-xl font-bold">امیرعلی اکبرزاده</h1>
+    <nav class="space-x-4 text-sm">
+      <a href="#about" class="hover:text-yellow-400">درباره من</a>
+      <a href="#hapkido" class="hover:text-yellow-400">هاپکیدو چیست؟</a>
+      <a href="#contact" class="hover:text-yellow-400">تماس</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 bg-cover bg-center" style="background-image: url('hero-background-final.jpg');" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-4">ورزشکار حرفه‌ای هاپکیدو</h2>
+    <p class="text-lg">من امیرعلی اکبرزاده هستم، با افتخار در رشته‌ی هاپکیدو فعالیت می‌کنم.</p>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="p-10 bg-gray-800" data-aos="fade-right">
+    <h3 class="text-2xl font-semibold mb-4">درباره من</h3>
+    <p>من امیرعلی اکبرزاده، ورزشکار فعال در رشته هاپکیدو هستم. سال‌ها تجربه، تمرین و رقابت در این هنر رزمی باعث شده تا امروز در مسیر حرفه‌ای این ورزش قرار داشته باشم.</p>
+  </section>
+
+  <!-- What is Hapkido -->
+  <section id="hapkido" class="p-10 bg-gray-700" data-aos="fade-left">
+    <h3 class="text-2xl font-semibold mb-4">هاپکیدو چیست؟</h3>
+    <p>هاپکیدو یک هنر رزمی کره‌ای با تمرکز بر دفاع شخصی، قفل مفاصل و استفاده از انرژی حریف علیه خودش است. این ورزش شامل حرکات پرتابی، ضربات پا و استفاده از سلاح‌هایی مثل چوب‌دستی و چاقو می‌باشد.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="p-10 text-center bg-gray-900" data-aos="zoom-in">
+    <h3 class="text-2xl font-semibold mb-4">تماس با من</h3>
+    <div class="flex justify-center gap-6 text-2xl mb-6">
+      <a href="https://instagram.com/brave_amirali7" target="_blank" class="hover:text-pink-500">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://wa.me/09039620743" target="_blank" class="glass-icon">
+      <a href="https://wa.me/989039620743" target="_blank" class="hover:text-green-400">
         <i class="fab fa-whatsapp"></i>
       </a>
-      <a href="mailto:qmir0919@gmail.com" class="glass-icon">
+      <a href="mailto:qmir0919@gmail.com" class="hover:text-blue-400">
         <i class="fas fa-envelope"></i>
       </a>
     </div>
-  </header>
 
-  <section class="py-12 px-6 max-w-3xl mx-auto bg-white bg-opacity-20 rounded-xl backdrop-blur-md shadow-md">
-    <h2 class="text-3xl font-bold mb-4 text-center">درباره من</h2>
-    <p class="text-lg leading-relaxed">
-      من امیرعلی اکبرزاده، ورزشکار رشته هاپکیدو هستم؛ هنری رزمی با ریشه‌های کره‌ای که ترکیبی از حرکات پرتابی، قفل مفصل‌ها، ضربات و دفاع شخصی است. 
-      هاپکیدو تنها یک ورزش نیست، بلکه مسیری برای رشد ذهن، کنترل نفس، قدرت درونی و مهارت در مواجهه با چالش‌هاست.
-      من مسیرم را با تلاش، تمرین مداوم و عشق به این هنر ادامه می‌دهم و معتقدم که روح رزمی واقعی در احترام، نظم و تلاش بی‌پایان نهفته است.
-    </p>
-  </section>
-
-  <section class="py-12 px-4 bg-gray-50 text-center" id="honors">
-    <h2 class="text-3xl font-bold mb-6 text-gray-800">افتخارات من</h2>
-    <div class="max-w-xl mx-auto bg-white rounded-2xl shadow-xl p-6 transition-transform hover:scale-105">
-      <img src="hapkido_certificate.jpg" alt="گواهینامه کمربند" class="rounded-lg mx-auto w-full mb-4" />
-      <p class="text-gray-700 text-lg">گواهینامه فنی کمربند از سبک HAPKIDO I.T.H</p>
+    <!-- Profile Image -->
+    <div data-aos="fade-up">
+      <img src="your-image.jpg" alt="امیرعلی اکبرزاده" class="mx-auto w-32 h-32 rounded-full border-4 border-yellow-400 shadow-lg hover:scale-105 transition duration-300" />
+      <p class="mt-3 text-sm text-gray-400">با من در تماس باشید</p>
     </div>
   </section>
 
-  <!-- avatar section -->
-  <section class="py-10 text-center">
-    <img src="your-image.jpg" alt="امیرعلی" class="w-32 h-32 rounded-full border-4 border-white mx-auto shadow-lg"/>
-  </section>
-
-  <footer class="text-center py-6 bg-black bg-opacity-70 text-sm">
-    ساخته‌شده با افتخار برای امیرعلی اکبرزاده | تمامی حقوق محفوظ است
-  </footer>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
