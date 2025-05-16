@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tahoma', sans-serif;
+  direction: rtl;
+  background: #111;
+  color: #fff;
+}
+
+.hero {
+  background: url('background.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+nav h1 {
+  font-size: 28px;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: crimson;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.container {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.achievements ul {
+  list-style: disc;
+  padding-right: 20px;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 14px;
+}
+
+.social a {
+  color: #ff5050;
+  text-decoration: none;
+  margin: 0 5px;
+}
